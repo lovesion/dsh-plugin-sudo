@@ -39,12 +39,11 @@ git clone https://github.com/lovesion/dsh-plugin-sudo.git \
 dsh plugin --profile dsh-tui add dsh-plugin-sudo
 ```
 
-包内的 `cordis.patch.yml`（`dsh.bundle.patch` 指向它）会负责把插件插进 profile。
-也可以从 git 安装同一个包：
+包内的 `cordis.patch.yml`（`dsh.bundle.patch` 指向它）会负责把插件插进 profile。这个包目前**没有发布到 npm**，所以这条路径暂时不可用。
 
-```bash
-dsh plugin --profile dsh-tui add github:lovesion/dsh-plugin-sudo
-```
+### 兼容性
+
+在 DSH 0.19.0 / Node.js 26 / Arch Linux 上测试通过。插件只用到宿主提供的 `tools` 和 `userQuestions` 两个服务。
 
 ## 用法
 
