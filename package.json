@@ -1,0 +1,47 @@
+{
+  "name": "dsh-plugin-sudo",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin: run a command as root, asking for the sudo password in a masked prompt instead of the chat.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "sudo",
+    "root",
+    "privilege"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovesion/dsh-plugin-sudo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lovesion/dsh-plugin-sudo/issues"
+  },
+  "homepage": "https://github.com/lovesion/dsh-plugin-sudo#readme",
+  "author": "lovesion",
+  "license": "MIT"
+}

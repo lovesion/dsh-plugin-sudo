@@ -1,0 +1,6 @@
+# Bundle layer for dsh-plugin-sudo.
+# When this package is installed as a DSH plugin bundle, this patch inserts the
+# plugin into the profile tree.
+- insert:
+    - id: tool-sudo
+      name: "dsh-plugin-sudo"
